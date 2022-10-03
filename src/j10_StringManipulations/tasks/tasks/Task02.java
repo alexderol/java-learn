@@ -19,6 +19,7 @@ public class Task02 {
              (password.charAt(0)>='A'&&password.charAt(0)<='Z') && //a şartı
              (password.charAt(password.length()-1)>='0'&&password.charAt(password.length()-1)<='9')&&//b şartı
              (password.length()>=6)//c şartı
+
         ) {
             System.out.println("password geçerli");
         }else System.out.println("password geçersiz");

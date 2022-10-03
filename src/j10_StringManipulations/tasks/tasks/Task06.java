@@ -17,6 +17,8 @@ public class Task06 {
         String str = sc.next();
 
         System.out.println(str.substring(0, str.length() - 1));
+        System.out.println((str.substring(0,str.length()-1)));
+
 
 
     }
