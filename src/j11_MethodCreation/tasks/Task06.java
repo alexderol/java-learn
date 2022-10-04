@@ -3,56 +3,88 @@ package j11_MethodCreation.tasks;
 import java.util.Scanner;
 
 public class Task06 {
+    static Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
 		 Kullanıcıya paralelkenar, dikdörtgen ve üçgen kelimelerinden birini 
 		 ve iki sayı seçmesini söyleyin. 
          Hangi şekli seçerse, o şeklin alanını ve çevresini ekrana yazdıran programı yazınız.
 		 */
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Hesap yapmak istediğiniz Diktörgen, Paralel kenar veya üçgen den birini seçin");
-		String secim = scan.nextLine().toUpperCase();
-		sekil(secim);
+
+        System.out.println("kare, dikdörtgen,üçgen birini seçiniz : ");
+        String secim = sc.next().toLowerCase();
+        System.out.println("1. sayıyı giriniz : ");
+        int sayi1 = sc.nextInt();
+        System.out.println("2. sayıyı giriniz : ");
+        int sayi2 = sc.nextInt();
+
+        secim(secim, sayi1, sayi2);
+    }
+
+    public static void secim(String str, int sayi1, int sayi2) {
+        switch (str) {
+            case "kare":
+                sayi2 = sayi1;
+                kareAlan(sayi1);
+                kareCevre(sayi2);
+                break;
+
+            case "dikdörtgen":
+                dikdortgenAlan(sayi1, sayi2);
+                dikdortgenCevre(sayi2,sayi1);
+                break;
+
+            case "üçgen":
+                sayi2=sayi1;
+                ucgenAlani(sayi1);
+                üçgenCevre(sayi2);
+
+                break;
+            default:
+                System.out.println("hatalı seçin yaptınız");
+                secim(str, sayi1, sayi2);
+        }
 
 
+    }
 
-	}
-	public static void sekil (String x){
-		switch (x){
-			case "PARALEL":
-				Scanner scan = new Scanner(System.in);
-				System.out.println("Paralel kenar için önce yükseklik giriniz");
-				int h = scan.nextInt();
-				System.out.println("Paralel kenar için önce taban uzunluğu giriniz");
-				int t = scan.nextInt();
-				System.out.println("Paralel kenar için önce kenar uzunluğu giriniz");
-				int k = scan.nextInt();
-				System.out.println("paralel Kenar alanı = "+(h*t));
-				System.out.println("parlel kenarın çevris = "+(t+k)*2);
-				break;
-			case"DİKDÖRTGEN":
-				Scanner scan1 = new Scanner(System.in);
+    private static void üçgenCevre(int sayi1) {
 
-				System.out.println("Dikdörtgen için sırayla kenar uzunluğunu giriniz");
-				int k1 = scan1.nextInt(); int k2 = scan1.nextInt();
-				System.out.println("Dikdörtgen alanı = "+(k1*k2));
-				System.out.println("Dikdörtgen kenarın çevris = "+((k1+k2)*2));
-				break;
-			case"ÜÇGEN":
-				Scanner scan2 = new Scanner(System.in);
-				System.out.println("Üçgenin yüksekliğini ve kenar uzunluklarını sırayla giriniz");
-				int h2= scan2.nextInt();
-				int k3 = scan2.nextInt();
-				int k4 = scan2.nextInt();
-				int k5 = scan2.nextInt();
-				System.out.println("Üçgenin alanı = "+(h2*k3)/2);
-				System.out.println("parlel kenarın çevris = "+(k3+k4+k5));
-				break;
-			default:
-				System.out.println("dikkatli olun yanlışlık var");
-		}
+        System.out.println("ucgen cevre :"+(sayi1*3));
+    }
 
-	}
+    private static void ucgenAlani( int sayi1) {
+
+        System.out.println("üçgn yukeskliği giriniz : ");
+        int yksklk=sc.nextInt();
+        System.out.println("ucgen alanı :"+((yksklk*sayi1)/2));
+
+
+    }
+
+    private static void dikdortgenCevre(int sayi2, int sayi1) {
+
+        System.out.println("dikdortgen cevresi :"+((sayi2+sayi1)*2));
+    }
+
+    private static void dikdortgenAlan(int sayi1, int sayi2) {
+
+        System.out.println("dikdortgen Alanı : "+(sayi2*sayi1));
+    }
+
+    private static void kareAlan(int sayi1) {
+
+
+        System.out.println("kare alan :" + (sayi1 * sayi1));
+
+
+    }
+
+    private static void kareCevre(int sayi1) {
+
+
+        System.out.println("kare cevre :" + (sayi1 * 4));
+    }
 
 }
