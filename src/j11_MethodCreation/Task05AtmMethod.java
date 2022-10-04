@@ -25,6 +25,7 @@ public class Task05AtmMethod {
                 break;
             default:
                 System.out.println("agam daha secim yapamirsen para istirsen...");
+                secim();
         }
 
 
