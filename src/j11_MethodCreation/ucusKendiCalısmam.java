@@ -12,9 +12,9 @@ public class ucusKendiCalısmam {
   65 yasindan buyukse 30% indirim,
   bilet gidis donus alinirrsa 20% indirim uygulayan bi app create ediniz
    */
-    static double fiyatB = 500 / 0.10;
-    static double fiyatC = 700 / 0.10;
-    static double fiyatD = 900 / 0.10;
+    static double fiyatB = 500 * 0.10;
+    static double fiyatC = 700 * 0.10;
+    static double fiyatD = 900 * 0.10;
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
