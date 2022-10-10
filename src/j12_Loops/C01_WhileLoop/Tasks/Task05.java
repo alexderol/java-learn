@@ -11,8 +11,28 @@ public class Task05 {
 
 		 */
 		
-			
+		Scanner scan = new Scanner(System.in);
+		System.out.println("isim giriniz");
+		String name= scan.nextLine();
+		System.out.println("Soyisim giriniz");
+		String SoyName= scan.nextLine();
+
+		String yeni="";
+
+		for (int i = 0; i < name.length(); i++) {
+			for (int j = 0; j < SoyName.length(); j++) {
+
+			}
+
+
+			System.out.print(name.charAt(i));
+
+
+		}
+
+		}
+
 
 	}
 
-}
+

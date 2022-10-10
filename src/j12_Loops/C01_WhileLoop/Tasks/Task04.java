@@ -8,7 +8,12 @@ public class Task04 {
 
 		 */
 
-		
+		for (int i = 1000; i > 100; i--) {
+			if(i%4==0 && i%6==0){
+				System.out.print(i+" ");
+			}
+
+		}
 		
 
 		
