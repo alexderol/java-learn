@@ -4,17 +4,20 @@ import java.util.Scanner;
 
 public class C02_DoWhileLoop {
     public static void main(String[] args) {
-// Task--> girilen sayı 17 den küçkü ise KAZANDINIZ 17 den küçük ise KAYBETTİNİZ print eden do while code create edin
-        Scanner scan = new Scanner(System.in);
-        System.out.println("bir  sayı girin");
-        int sayi= scan.nextInt();
-
+///task-> girilen sayı 17 den kucuk ise "kazandınız" print eden  değilse ise sayı girişi isteyen
+        //  code create ediniz...
+        Scanner sc =new Scanner(System.in);
+        int sayi = 0;
         do {
+            System.out.println("AGAM nassıng :) bir tamsayı giriyorsun : ");
 
-            System.out.println("KAZANDINIZ");
+            sayi= sc.nextInt();
+
+
+
             sayi++;
-        }while (sayi<17) ;
-            System.out.println(sayi +" için KAYBETTİNİZ");
+        }while (sayi>=17);
+        System.out.println(sayi+" için kazandınız... :) ");
 
 
 
