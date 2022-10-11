@@ -30,14 +30,37 @@ public class C01_InstanceVariable {
 
     public static void main(String[] args) {
 
+                                //instance variablellar******
         int a=7;//local variable
         System.out.println(a);
         //System.out.println(yas);// yas instance variable dır değer ataması yapmadan çalışmaz..non static olduğu için doğrudan call edilmez
         System.out.println(kurs);//static  variable doğrudan methoda çağırılır
+        staticMethod();//static method call edildi...astral seyahat :)  ---> static olan main sadece static method kol eder
+        //non static method call edilemez
+       // non_staticMethod();// non static method call edilemez
+        // obj creation --> ClassName + objeName= new ClassName...
+
+        C01_InstanceVariable ebikGabıkObj = new C01_InstanceVariable();// obj create edildi
+        ebikGabıkObj.boy=1.7;
+        ebikGabıkObj.developerMı=true;
+        ebikGabıkObj.name="kubra hanım";
+        System.out.println(ebikGabıkObj.name);
+        System.out.println(ebikGabıkObj.tecrube);// default deger 0 verir
+        ebikGabıkObj.yas=33;
+        System.out.println(ebikGabıkObj.yas);// 48 den 33 e değiştirdik
+        C01_InstanceVariable obj1= new C01_InstanceVariable();// farklı bir obj1 isminde obje  create ettik
+        obj1.boy=1.65;
+        obj1.name="fatih bey";
 
 
 
+    }
+    public void non_Static () {//static olmayan method
+        System.out.println("static olmayan methoddan aga ya selam");
 
 
+    }
+    public static void staticMethod(){//static method
+        System.out.println("static güneş methoddasın agam devawamkeeee");
     }
 }

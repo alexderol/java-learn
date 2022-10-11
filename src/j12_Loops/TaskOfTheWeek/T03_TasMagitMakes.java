@@ -2,7 +2,7 @@ package j12_Loops.TaskOfTheWeek;
 
 import java.util.Scanner;
 
-public class T03_TasKagitMakas {
+public class T03_TasMagitMakes {
 
 	public static void main(String[] args) {
 		// tas >makas
