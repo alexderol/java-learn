@@ -23,8 +23,8 @@ public class C01_Arrays {
         ///Array'a eleman ekleme...
         sayiArr[2] = 34;
         sayiArr[0] = 35;
-        sayiArr[1] = 24;
-        sayiArr[3] = 61;
+        sayiArr[1] = 43;
+        sayiArr[3] = 94;
         sayiArr[0] = 34;//0 index array elamanı 34 ile update edildi
         //array elemanları unique olmak zorunda değildir tekrarlı array elemanı olabilir
 
@@ -82,13 +82,23 @@ public class C01_Arrays {
             if(isimArr[i].length()==5){
                 koltukSayısı++;
                 yeniArr[i]=isimArr[i];
-                System.out.println(Arrays.toString(yeniArr));
+                //System.out.println(Arrays.toString(yeniArr));
+                System.out.println(koltukSayısı);
 
 
             }
 
 
         }
+        /// Array elemanlarını naturel (k->b: ascending b->k : descending, alfabetikk) sırala
+
+        System.out.println(Arrays.toString(isimArr));//sıralama öncesi
+        Arrays.sort(isimArr);//isimArr elemanları naturel sıralanır
+        System.out.println(Arrays.toString(isimArr));//sıralama sonrası
+
+        System.out.println(Arrays.toString(sayiArr));//sıralama öncesi
+        Arrays.sort(sayiArr);
+        System.out.println(Arrays.toString(sayiArr));//sıralama sonrası
 
 
     }
