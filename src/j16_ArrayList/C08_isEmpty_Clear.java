@@ -17,6 +17,8 @@ public class C08_isEmpty_Clear {
 
         System.out.println(listSehir);// silindiği için boş yazdırır []
 
+        System.out.println(listSehir.isEmpty());//true çıkar çünkü artık burası boş
+
 
     }
 }
