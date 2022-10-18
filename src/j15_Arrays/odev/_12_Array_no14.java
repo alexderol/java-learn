@@ -20,6 +20,10 @@ public class _12_Array_no14 {
         Sonuç false olmalı
         NOT: Array elemanlarını 1,2,3 olarak değiştirirseniz sonuç doğru olmalı
          */
+        int [] arr=  {1,2,3,4};
+
+
+
 
 
 

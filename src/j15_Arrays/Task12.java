@@ -13,8 +13,20 @@ public class Task12 {
         */
 
         int arr[] = {2, 6, 4, 5, 8, 9};
+        kareleri(arr);
 
 
+
+
+    }
+
+    private static void kareleri(int[] arr) {
+        int yeniArr[] =new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            yeniArr[i]=arr[i]*arr[i];
+
+        }
+        System.out.println("Arrays.toString(yeniArr) = " + Arrays.toString(yeniArr));
 
     }
 

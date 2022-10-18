@@ -6,7 +6,7 @@ import java.util.List;
 public class C03_indexOf {
 
     public static void main(String[] args) {
-        //indexOf(); --> list içinde istenen elemanın indeş değerini return eder
+        //indexOf(); --> list içinde istenen elemanın index değerini return eder
         ArrayList<String> listUlke = new ArrayList<>(List.of("Alamanya", "Amerigonya", "İngiltere", "İsveç"));
         ArrayList<String> listSehir = new ArrayList<>(List.of("Münih", "losAngeles", "London", "Stockholm"));
 
@@ -17,7 +17,7 @@ public class C03_indexOf {
 
         listUlke.add("Amerigonya");
         System.out.println(listUlke);
-        System.out.println(listUlke.indexOf("Amerigonya"));// 1 yazdı çünkü Amerigonya yeniden ekledik yazdırırken bize ilk sıradakini getirir yani soldan sağada ilk olan
+        System.out.println(listUlke.indexOf("Amerigonya"));// 1 yazdı çünkü Amerigonya yeniden ekledik yazdırırken bize ilk sıradakini getirir yani soldan sağa ilk olan
 
         System.out.println(listUlke.lastIndexOf("Amerigonya")); // 4 yazdı çünkü sağdan (sondan ) ilk bulunan elemanın indexi return eder
 

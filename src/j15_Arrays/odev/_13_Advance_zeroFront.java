@@ -17,6 +17,9 @@ public class _13_Advance_zeroFront {
    Sonuç böyle olmalı :  0,0,0,1,1
 
        */
+        int [] arr ={1,0,2,3,0,8,0,3,0,6,69,0,789};
+        Arrays.sort(arr);
+        System.out.println("Arrays.toString(arr) = " + Arrays.toString(arr));
 
 
     }

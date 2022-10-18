@@ -11,8 +11,22 @@ public class Task10 {
         output :-1,-2,3,-4,5,6
 
          */
+        int [] arr={1,2,-3,4,-5,-6};
+        isaret(arr);
 
 
+    }
+
+    private static void isaret(int[] arr) {
+        int [] arrYeni= new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]>0){
+                arrYeni[i]=arr[i]*-1;
+            }else if(arr[i]<0){
+                arrYeni[i]=arr[i]*-1;
+            }
+        }
+        System.out.println("Arrays.toString(arrYeni) = " + Arrays.toString(arrYeni));
     }
 
 

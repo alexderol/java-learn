@@ -8,6 +8,17 @@ public class Task06 {
 
         int arr[]= {3,5,6,1,9,45,25,4,9,0};
 
+        sıralaBdenKye(arr);
+
+
+
+    }
+
+    private static void sıralaBdenKye(int [] arr) {
+        Arrays.sort(arr);
+        for (int i = arr.length-1; i >=0 ; i--) {
+            System.out.print( arr[i]+" ");
+        }
 
     }
 }

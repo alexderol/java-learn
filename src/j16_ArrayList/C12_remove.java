@@ -26,6 +26,11 @@ public class C12_remove {
         listSehir.remove("Münih");// ilk münih silinir
         System.out.println(listSehir);//[Stockholm, Münih, Angara, Münih]
 
+        ArrayList<String> listUlke = new ArrayList<>(List.of("Alamanya", "Amerigonya", "İngiltere", "İsveç"));
+        listSehir.addAll(listUlke);
+        System.out.println("listSehir = " + listSehir);
+        listSehir.removeAll(listUlke);
+        System.out.println(listSehir);/// ekledik sonra çıkardık addAll ve removeAll çalıştık yani
 
 
 

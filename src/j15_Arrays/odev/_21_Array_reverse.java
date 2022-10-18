@@ -10,6 +10,12 @@ public class _21_Array_reverse {
         Input(girdi): 123
         Output(çıktı): 321
          */
+        int [] arr=  {1,2,3};
+        int reverse=0;
+        for (int i = arr.length-1; i >= 0 ; i--) {
+            System.out.print(arr[i]);
+
+        }
 
 
     }

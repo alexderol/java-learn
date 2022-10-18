@@ -11,6 +11,14 @@ public class _06_Array_contains {
         Loops (döngüler) kullanın.
          */
 
+        String [] eleman= {"Apple","Orange","Banana","Pineapple"};
+        for (int i = 0; i < eleman.length; i++) {
+
+
+
+        }
+
+
 
     }
 }

@@ -21,5 +21,6 @@ public class C03_Arrays {
         System.out.println(harfArr.length);//78 karakter varmış tabi harf dışındaki karakterleri de replaceAll ile kaybedebiliriz
 
 
+
     }
 }

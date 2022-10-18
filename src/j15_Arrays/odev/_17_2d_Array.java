@@ -1,5 +1,7 @@
 package j15_Arrays.odev;
 
+import java.util.Arrays;
+
 public class _17_2d_Array {
 
     public static void main(String[] args) {
@@ -10,7 +12,11 @@ public class _17_2d_Array {
         Array'i yazdırınız.
          */
 
+        int[][] arr = {{2, 3, 2}, {4, 1, 5}, {7, 2, 5}};
+
 
 
     }
+
+
 }

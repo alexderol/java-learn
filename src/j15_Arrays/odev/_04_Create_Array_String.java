@@ -9,8 +9,13 @@ public class _04_Create_Array_String {
         Array'daki eleman sayısını yazdırınız.
         Cevap 4 olmalı.
          */
+        String [] arr=  {"new jersey" , "new york", "boston","California"};
+        int elemanSayısı=0;
+        for (int i = 0; i < arr.length ; i++) {
+            elemanSayısı++;
 
-
+        }
+        System.out.println("elemanSayısı = " + elemanSayısı);
 
 
     }
