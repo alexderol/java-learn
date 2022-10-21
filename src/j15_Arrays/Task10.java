@@ -19,14 +19,24 @@ public class Task10 {
 
     private static void isaret(int[] arr) {
         int [] arrYeni= new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
+        for (int a:arr ) {
+              a*=-1;
+
+
+            System.out.println(a+" ");
+        }
+
+
+
+
+        /*for (int i = 0; i < arr.length; i++) {
             if(arr[i]>0){
                 arrYeni[i]=arr[i]*-1;
             }else if(arr[i]<0){
                 arrYeni[i]=arr[i]*-1;
             }
         }
-        System.out.println("Arrays.toString(arrYeni) = " + Arrays.toString(arrYeni));
+        System.out.println("Arrays.toString(arrYeni) = " + Arrays.toString(arrYeni));*/
     }
 
 

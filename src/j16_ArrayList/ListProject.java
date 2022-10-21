@@ -1,6 +1,7 @@
 package j16_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,32 +25,66 @@ public class ListProject {
 
      *
      */
-    static Scanner scan = new Scanner(System.in);
-   static ArrayList<String> günler = new ArrayList<>(List.of("Pazartesi","Salı", "Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"));
-    static  ArrayList<Integer> günlükKazanc = new ArrayList<>();
+    static ArrayList<String> gunler = new ArrayList<>(Arrays.asList("p.tesi", "salı", "carşamba", "perşembe", "cuma", "c.tesi", "pazar"));//1. adım
+    static ArrayList<Double> gunlukKazanclar = new ArrayList<>();//2.adım
+    static Scanner sc = new Scanner(System.in);
+    static double haftaCirosu = 0;
 
     public static void main(String[] args) {
-    int kazanc=0;
-    int toplam = 0;
+        int gun = 0;
+        while (gun < 7) {//3. adım
+            System.out.println("agam hele " + gunler.get(gun) + " gunun hasılatını gir : ");
+            double gunKazancı = sc.nextDouble();
+            ;
+            gunlukKazanclar.add(gunKazancı);
 
- 
+            haftaCirosu += gunKazancı;
+            //haftaCirosu += gunlukKazanclar.get(gunlukKazanclar.size()-1);
+            gun++;
+        }
+        getOrtalamaninUstundeKazancGünleri();
+        getOrtalamaninAltindaKazancGünleri();
+        getOrtalamaKazanc();
+        System.out.println("haftanın cirosu :" + haftaCirosu);
+        System.out.println("haftanın ortalaması : " + getOrtalamaKazanc());
+        System.out.println("ortalam ustu kazanc olan günler : " + getOrtalamaninUstundeKazancGünleri());
+        System.out.println("ortalam altı kazanc olan günler : " + getOrtalamaninAltindaKazancGünleri());
+    }//methon sonu
 
+    private static String getOrtalamaninAltindaKazancGünleri() {//6. adım
+        String ortalamaAltıGun = "";
 
+        for (int i = 0; i < gunlukKazanclar.size(); i++) {// gunluk hasılat döngüsü
+            if (gunlukKazanclar.get(i) < getOrtalamaKazanc()) { //gunluk haıslat haftanın ortalaması ile kontrol
+                ortalamaAltıGun += gunler.get(i);//ortlamanın altındakş hasılat olan gun ortlama altı gune eklendi
+            }
+        }
 
-
-
+        return ortalamaAltıGun;
 
 
     }
 
-    private static void getOrtalamaKazanc() {
+    private static String getOrtalamaninUstundeKazancGünleri() {//5. adım
+        String ortalaUstuGun = "";
 
+        for (int i = 0; i < gunlukKazanclar.size(); i++) {// gunluk hasılat döngüsü
+            if (gunlukKazanclar.get(i) > getOrtalamaKazanc()) { //gunluk haıslat haftanın ortalaması ile kontrol
+                ortalaUstuGun += gunler.get(i);//ortlamanın ustınde hasılat olan gun ortlama ustu gune eklendi
+            }
+        }
 
-
+        return ortalaUstuGun;
     }
 
+    private static double getOrtalamaKazanc() {//4. adım
 
+        double ortalama = haftaCirosu / 7;
+
+        return ortalama;
+    }
 }
+
 
 
 

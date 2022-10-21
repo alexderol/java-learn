@@ -9,17 +9,24 @@ public class Task02 {
         Scanner scan = new Scanner(System.in);
         System.out.println("kaç elemanlı array istiyorsunuz");
         //int arrBoyut = scan.nextInt();
-        int arr[]=new int[scan.nextInt()];//kullanıcı girdisini direk yeni oluşturana ekledik
+        int arr[] = new int[scan.nextInt()];//kullanıcı girdisini direk yeni oluşturana ekledik
 
-        int toplam=0;
+        int toplam = 0;
+
+        for (int a:arr) {
+            toplam+=a;
+
+            }
+        System.out.println("toplam = " + toplam);
 
 
-        for (int i = 0; i < arr.length; i++) {//koltukları doldurmaya başlıyoruz 0 dan başla arrBoyut a kadar yolcu bindir
-            System.out.print(i+ ". index elemanı giriniz ");
-            arr[i]= scan.nextInt();
-            toplam+=arr[i];
+        // for (int i = 0; i < arr.length; i++) {//koltukları doldurmaya başlıyoruz 0 dan başla arrBoyut a kadar yolcu bindir
+       //     System.out.print(i + ". index elemanı giriniz ");
+       //     arr[i] = scan.nextInt();
+       //     toplam += arr[i];
+//
+       // }
+       // System.out.println(" istediğiniz array = " + Arrays.toString(arr) + "\n\n array eleman toplamı toplam= " + toplam);
 
     }
-        System.out.println(" istediğiniz array = " + Arrays.toString(arr)+"\n\n array eleman toplamı toplam= "+toplam);
-
-    }}
+}
