@@ -15,6 +15,9 @@ public class _20_Arrayboth_Ends {
     Sonuç bu şekilde olmalıdır. [1, 4]
       */
         int ilk []={1, 2, 3, 4};
+        int son []= new int[2];
+
+
 
 
 
