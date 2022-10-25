@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Task01 {
     public static void main(String[] args) {
         /* TASK->
-		 Ask user to enter mid-term grade, final grade, and project grade
-		 Calculate the general grade (mid-term : 30% , project : 20%, final : 50%)
+		 Ask user to enter mid-term tasks.grade, final tasks.grade, and project tasks.grade
+		 Calculate the general tasks.grade (mid-term : 30% , project : 20%, final : 50%)
 
 		  Example:
-		      INPUT: mid-term grade=78
-		      		 final grade = 66
-		      		 project grade = 90
-		      OUTPUT: "Your grade is : 81,6"
+		      INPUT: mid-term tasks.grade=78
+		      		 final tasks.grade = 66
+		      		 project tasks.grade = 90
+		      OUTPUT: "Your tasks.grade is : 81,6"
 
 
  */

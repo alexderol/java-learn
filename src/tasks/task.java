@@ -3,7 +3,7 @@ package tasks;
 public class task {
     /*
      Task 01 >
-     fields: width, length ve cevre ve alan hesaplayaan methodolan Rectangle isminde Class create ediniz.
+     fields: width, length ve cevre ve alan hesaplayaan methodolan tasks.Rectangle isminde Class create ediniz.
      Runeer class'da obj ile cevre ve alan değerelrini print eden code create ediniz.
     */
 
