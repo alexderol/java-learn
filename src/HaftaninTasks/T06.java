@@ -1,4 +1,4 @@
-package haftanınTaskları;
+package HaftaninTasks;
 
 public class T06 {
     public static void main(String[] args) {

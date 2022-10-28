@@ -1,4 +1,4 @@
-package haftanınTaskları;
+package HaftaninTasks;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package haftanınTaskları;
+package HaftaninTasks;
 
 public class T04_AnagramKontrol {
 
