@@ -8,7 +8,7 @@ public class C03_ImmutableClass {
         /*
   Boolean, Short, Integer, Long, Float, Double, Char ve String gibi tüm kapsayıcı sınıflar (Wrapper Class)
   BigDecimal, BigInteger java'da immutable sınıflara örnek olarak gösterilebilir.
-        Date, j23_varargs_stringbuilder.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.Varargs.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.Varargs.StringBuilder, StringBuffer, Arrays ve ArrayList de Mutable (değişebilir) class'lardır.
+        Date, j23_varargs_stringbuilder.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.Varargs.j23_Varargs_StringBuilder.j23_Varargs_StringBuilder.Varargs.j23_Varargs_StringBuilder.StringBuilder, StringBuffer, Arrays ve ArrayList de Mutable (değişebilir) class'lardır.
  */
 
         String name="Merve";
