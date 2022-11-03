@@ -1,5 +1,7 @@
 package j23_Varargs_StringBuilder.StringBuilder;
 
+import java.util.Collections;
+
 public class C02_StringBuilder {
     public static void main(String[] args) {
 
@@ -55,6 +57,51 @@ public class C02_StringBuilder {
 
         System.out.println("sb1.deleteCharAt(3) = " + sb1.deleteCharAt(3));//3. index silindi "A" JAVTAR selam.....
         System.out.println("sb1.delete(1,5) = " + sb1.delete(3, 7));//3.4.5.6. indnexler silindi jAVselam.....
+
+        //istenen character veya caharterleri eklemek
+
+        System.out.println("sb3 = " + sb3);//ebubekir bey
+        System.out.println("sb3.insert(4,\":)\") = " + sb3.insert(4, ":)"));//ebub:)ekir bey
+        String s="güzel insan";
+
+        System.out.println("sb3.insert(1,s,3,7) = " + sb3.insert(1, s, 3, 7));// eel ibub:)ekir bey  -->sb3 ücün 1 karakterisen s nin 3 ve 7 arasındaki carakterleri çak
+        System.out.println("sb3.insert(9,s) = " + sb3.insert(9, s));//eel ibub:güzel insan)ekir bey ---> 9 a s yi komple ekle
+        StringBuilder sb4 = new StringBuilder("Nihan Hanım");
+        System.out.println("sb4.insert(5, \"Qa team lead\",0,2) = " + sb4.insert(5, "Qa team lead", 0, 2));//NihanQa Hanım
+
+
+        //İstenen index deki karakteri değiştirmek..
+        sb4.setCharAt(5,' ');
+        System.out.println("sb4 = " + sb4);//Nihan a Hanım
+
+        //istenen index e character yerine birden çok character ekleme
+        System.out.println("sb4.replace(8,10,\"hi\") = " + sb4.replace(8, 10, "hi"));// sb4 e git 8. karakteri bul 10 a kadar hi yap---Nihan a hinım
+
+
+        //StringBuilder obj Stringe çevirme-->toString
+        System.out.println("sb3.toString().toUpperCase() = " + sb3.toString().toUpperCase());//EEL IBUB:GÜZEL INSAN)EKIR BEY ---> stringe çevrildi ve strineg methodları ile büyük harf yaptık
+
+
+        /*
+        Compare iki sb'i esit mi diye kontrol etmek icin
+        ilk harften baslayarak tum karakterleri karsilastirir
+        Ayni olan karakterler icin bir sey return etmezken
+        farkli olan ilk karakter icin ascii tablosuna gore kac deger geride veya ileride
+        oldugunu print eder
+        Tamamen ayni ise bize 0 return eder
+
+        bir sb ile bir String'i compare etmek istersek Java CTE verir
+        */
+
+        StringBuilder sb5 =new StringBuilder("JavaCAN");
+        StringBuilder sb6 =new StringBuilder("JavaCAN");
+        String str1 ="JavaCAN";
+        System.out.println("sb5.compareTo(sb6) = " + sb5.compareTo(sb6));//0 tamamen aynı sb5 ile sb6 karşılaştırdık
+
+       // System.out.println("sb6.compareTo(str1) = " + sb6.compareTo(str1));//CTE alırsın çünkü biri strng biri SB
+
+        System.out.println("sb6.equals(sb5) = " + sb6.equals(sb5));//false -->SB equals == gibi çalışır  hem value hem de ref değerine bakar
+        System.out.println("str1.equals(sb6.toString()) = " + str1.equals(sb6.toString()));//true--ikiside string oldu o yüzden true verir
 
 
 
