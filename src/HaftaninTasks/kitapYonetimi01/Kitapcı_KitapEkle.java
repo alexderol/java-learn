@@ -9,6 +9,8 @@ public class Kitapcı_KitapEkle {
 	public static int count = 1000;
 
 	public static List<EklenenKitaplar> liste = new ArrayList();
+	//(Kitap No+ kitap adı+ Kitap Adı: hayvanat bahçesi, Yazar Adı: kuşlar, Fiyatı: 150
+	//
 
 	public static List<EklenenKitaplar> kitapEkle() {
 

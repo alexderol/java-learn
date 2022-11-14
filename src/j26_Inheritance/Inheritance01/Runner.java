@@ -52,6 +52,14 @@ public class Runner {
 
         System.out.println("*********");
 
+        Sheep koyun = new Sheep();
+        koyun.semir();
+        koyun.hareket();
+        koyun.dogum();
+        koyun.yeme();
+        koyun.icme();
+        koyun.sutBeslenme();
+
 
 
 

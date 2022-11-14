@@ -2,7 +2,7 @@ package HaftaninTasks.kitapYonetimi01;
 
 import java.util.Scanner;
 
-public class Kitapcı_Main {
+public class Kitapci_Main {
 
 	public static void main(String[] args) {
 
@@ -30,6 +30,8 @@ public class Kitapcı_Main {
 		 */
 		// Kitapcı_KitapEkle kitap = new Kitapcı_KitapEkle();
 
+		//"Kitap No: 1003, Kitap Adı: hayvanat bahçesi, Yazar Adı: kuşlar, Fiyatı: 150"
+
 		menu();
 		boolean flag = true;
 		do {
@@ -53,6 +55,7 @@ public class Kitapcı_Main {
 				Kitapcı_KitapEkle.tumKitaplariListele();
 				break;
 			case 6:
+				Kitapcı_KitapEkle.tumKitaplariListele();
 				System.out.println("Yine Bekleriz GÜLE GÜLE....");
 				flag = false;
 				break;
@@ -67,7 +70,7 @@ public class Kitapcı_Main {
 
 	private static void menu() {
 
-		System.out.println("//////////////// KİTAPCI PRIGRAMI //////////////////");
+		System.out.println("//////////////// KİTAPCI PROGRAMI //////////////////");
 		System.out.println(
 				" 	1-kitap ekle\n" + 
 				"	2-numara ile kitap goruntule\n" + 
