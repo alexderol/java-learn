@@ -16,22 +16,25 @@ public abstract class Sekil {
     }
 
 
-
     public void setName(String name) {
         this.name = name;
     }
+
     public abstract double alanHesapla();
+
     public abstract double cevreHesapla();
 
-    public String ciz(){
+    public String ciz() {
 
 
-        return this.name+" cizildi";
+        return this.name + " cizildi";
     }
 
     @Override
     public String toString() {//obj  value print eder
         return
-                "Sekil Ismi= " + this.name+"\nSekil Alan= "+this.alanHesapla()+"\nSekil Cevre = "+ this.cevreHesapla()+"\nSekil "+this.ciz();
+                "Sekil Ismi= " + this.name + "\nSekil Alan= " +
+                        this.alanHesapla() + "\nSekil Cevre = " +
+                        this.cevreHesapla() + "\nSekil " + this.ciz();
     }                                                       //method call
 }
